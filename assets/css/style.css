@@ -332,7 +332,8 @@ body {
 /* Slider */
 #slider {
     position: relative;
-    margin: 10rem auto auto auto;
+    padding-top: 10rem;
+    margin: auto;
     z-index: 0;
 }
 
