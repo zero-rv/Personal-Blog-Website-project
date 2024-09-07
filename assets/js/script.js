@@ -87,9 +87,9 @@ subscribeBtn.onmousedown = () => {
 }
 //Scroll Top Btn
 const scrollTop = $('.scroll-top-btn');
-window.addEventListener("scroll", () => {
+document.onscroll = () => {
     if (window.scrollY >= 1200)
         scrollTop.style.display = 'flex';
     else
         scrollTop.style.display = 'none';
-});
+}
