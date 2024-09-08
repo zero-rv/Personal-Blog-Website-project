@@ -80,7 +80,7 @@ nameForm.onmousedown = emailForm.onmousedown = () => {
 const subscribeBtn = $('#footer .btn.subscribe');
 subscribeBtn.onmousedown = () => {
     let message = '<span style="color: #2aff00; font-size: 0.8rem;">Cảm ơn bạn đã theo dõi</span>';
-    if (nameForm.value === '' || emailForm.value === '')
+    if (nameForm.value.trim() === '' || emailForm.value.trim() === '')
         message = '<span style="color: #ff4b4b; font-size: 0.8rem;">Không được để trống tên và email</span>';
 
     $('#footer .message-box').innerHTML = message;
